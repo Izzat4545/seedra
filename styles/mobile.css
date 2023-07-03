@@ -1,0 +1,22 @@
+@media only screen and (max-width: 1088px) {
+    .link-wrapper, .desktop{
+        display: none;
+    }
+    .header-holder{
+        justify-content: space-around;
+    }
+    .hamburger{
+        display: block;
+    }
+    .sidebar{
+        display: block;
+    }
+
+    .mobile{
+        border-color: red;
+        border: 1px solid var(--light-grey-stroke, #EFEFEF);
+        border-radius: 40px;
+        padding: 5px;
+    }
+}
+  
