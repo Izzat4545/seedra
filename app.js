@@ -11,5 +11,5 @@ function triggerSidebar(){
     sidebar.style.right = '0%'
 }
 function close(){
-    sidebar.style.right = '-50%'
+    sidebar.style.right = '-57%'
 }
