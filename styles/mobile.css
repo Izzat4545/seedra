@@ -18,5 +18,28 @@
         border-radius: 40px;
         padding: 5px;
     }
+    .mobile_banner{
+        display: block;
+    }
+    .banner_large_text{
+        font-size: 28px;
+    }
+    .banner_small_text{
+        font-size: 14px;
+    }
+    .image_holder{
+        margin: 0;
+    }
+    .mobile_banner img{
+        width: 375px;
+    }
+    .desktop_banner{
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 10px 50px 14px;
+    }
 }
   
