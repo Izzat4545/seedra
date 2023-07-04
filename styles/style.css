@@ -62,8 +62,6 @@ li{
 .link a:hover::after{
     width: 100%;
 }
-
-
 .socials{
     display: flex;
     justify-content: space-around;
@@ -130,8 +128,9 @@ li{
     border-radius: 15px;
     padding: 40px 10px 10px 70px;
     display: flex;
+    align-items: center;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: start;
     position: relative;
     overflow: hidden;
 }
@@ -195,6 +194,38 @@ li{
     display: none;
 }
 .image_holder{
+    position: absolute;
+    right: 75px;
     margin-right: -75px;
     margin-bottom: -15px;
+}
+
+.small-banner{
+    background: #fffdec;
+    padding: 23px 10px 25px 70px;
+    overflow: hidden;
+    margin-top: 16px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.s_banner_main_text{
+    font-size: 24px;
+    font-weight: 600;
+    color: #1F2533;
+}
+.s_banner_text_holder{
+    z-index: 1;
+}
+.left_img, .right_img{
+    position: absolute;
+}
+.left_img{
+    left: 0;
+}
+.right_img{
+    right: 0;
 }
