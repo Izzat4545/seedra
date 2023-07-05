@@ -13,7 +13,6 @@
     }
 
     .mobile{
-        border-color: red;
         border: 1px solid var(--light-grey-stroke, #EFEFEF);
         border-radius: 40px;
         padding: 5px;
@@ -41,7 +40,37 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0px 10px 50px 14px;
+        padding: 0px 10px 0px 14px;
+    }
+
+    .left_img{
+        left: -30px;
+        bottom: -30px;
+    }
+    .right_img{
+        right: -30px;
+        bottom: -30px;
+    }
+    .small-banner img{
+        width: 150px;
+    }
+    .banner_info{
+        margin: 40px 10px 50px 10px;
+    }
+
+    .discount_price{
+        font-size: 32px;
+        color: #E55C5C;
+    }
+    .actual_price{
+        font-size: 22px;
+    }
+    .cards{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .cards::-webkit-scrollbar{
+        display: none;
     }
 }
   

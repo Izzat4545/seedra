@@ -102,7 +102,7 @@ li{
     display: flex;
     flex-direction: column;
     align-items: end;
-    z-index: 1;
+    z-index: 10;
 }
 .links_m a{
     text-decoration: none;  
@@ -126,7 +126,6 @@ li{
     margin-top: 32px;
     background:#EAF1EB;
     border-radius: 15px;
-    padding: 40px 10px 10px 70px;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -136,6 +135,7 @@ li{
 }
 .banner_info{
     z-index: 1;
+    margin: 40px 10px 50px 70px;
 }
 .regular_btn{
     border: none;
@@ -205,7 +205,6 @@ li{
 
 .small-banner{
     background: #fffdec;
-    padding: 23px 10px 25px 70px;
     overflow: hidden;
     margin-top: 16px;
     border-radius: 12px;
@@ -228,8 +227,109 @@ li{
 }
 .left_img{
     left: 0;
+    bottom: 0;
 }
 .right_img{
     right: 0;
+    bottom: 0;
+}
+.small-banner img{
+    width: 150px;
 }
 
+.product_section{
+    margin-top: 50px;
+}
+.heading_holder{
+    display: flex;
+    justify-content: space-between;
+}
+.setion_name{
+    font-size: 36px;
+    color: #1F2533;
+    font-weight: 600;
+}
+.category_button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid  #EFEFEF;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    color: #1F2533;
+}
+.category_holder{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+    overflow-x: scroll;
+}
+.category_holder::-webkit-scrollbar{
+    display: none;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 32px;
+}
+.card{
+    border-radius: 8px;
+    border: 2px solid #EFEFEF;
+    width: 320px;
+    position: relative;
+    padding: 28px;
+    cursor: pointer;
+}
+.card_product_img{
+    display: flex;
+    justify-content: center;
+}
+.card_favaurite_icon_passiv, .card_favaurite_icon_active{
+    position: absolute;
+    cursor: pointer;
+    right: 12px;
+    top: 12px;
+    border: 1px solid #EFEFEF;
+    border-radius: 40px;
+    padding: 5px;
+    transition: 1s;
+}
+.card_favaurite_icon_active{
+    display: none;
+    border: 1px solid #FFCF55;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+.card_price_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checked {
+    color: rgba(255, 207, 85, 1);
+}
+.price{
+    font-size: 28px;
+    font-weight: 600;
+    color: #1F2533;
+}
+.card_stars{
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+.card_description{
+    font-size: 16px;
+    font-weight: 500;
+}
+.cart{
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+}
