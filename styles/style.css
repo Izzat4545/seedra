@@ -134,6 +134,9 @@ li{
     position: relative;
     overflow: hidden;
 }
+.banner_info{
+    z-index: 1;
+}
 .regular_btn{
     border: none;
     color: #359740;
@@ -229,3 +232,4 @@ li{
 .right_img{
     right: 0;
 }
+
