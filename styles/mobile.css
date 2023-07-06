@@ -72,5 +72,16 @@
     .cards::-webkit-scrollbar{
         display: none;
     }
+
+    .blog_wrapper{
+        overflow-x: scroll;
+    }
+    .blog_wrapper::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .left_blog_cards_wrapper{
+        flex-direction: row;
+    }
 }
   
