@@ -244,7 +244,7 @@ li{
     display: flex;
     justify-content: space-between;
 }
-.setion_name{
+.section_name{
     font-size: 36px;
     color: #1F2533;
     font-weight: 600;
@@ -344,13 +344,15 @@ li{
     margin-top: 40px;
     align-items: center;
     justify-content: center;
-    flex-basis: 50%;
 }
 .left_blog_cards_wrapper{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    flex-basis: 40%;
+    flex-basis: 50%;
+}
+.double_card_wrapper{
+    flex-basis: 100%;
 }
 .blog_card_1{
     background: #EAF1EB;
@@ -360,15 +362,23 @@ li{
 .blog_card_2{
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: start;
+    flex-basis: 100%;
+    padding-bottom: 130px;
+    position: relative;
 }
+.blog_card_2 .blog_card_side_img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
 .blog_card_3{
     display: flex;
     flex-direction: column;
     align-items: end;
     border-radius: 12px;
     max-width: 400px;
-    flex-basis: 100%;
 }
 .blog_card_1, .double_card_wrapper{
     display: flex;
@@ -402,4 +412,73 @@ li{
 .blog_card_1, .blog_card_2, .blog_card_3{
     overflow: hidden;
     border-radius: 12px;
+}
+
+.review{
+    margin-top: 60px;
+}
+
+.slider{
+    margin-top: 44px;
+}
+.review_cards{
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    justify-content: center;
+}
+.review_cards::-webkit-scrollbar{
+    display: none;
+}
+.review_card{
+    border-radius: 12px;
+    padding: 35px;
+    border: 1px solid  #EFEFEF;
+    box-shadow: 0px 4px 21px 0px rgba(209, 209, 209, 0.25);
+}
+.review_stars{
+    margin-bottom: 15px;
+}
+.avatar{
+    display: flex;
+    gap:24px;
+    margin-bottom: 10px;
+}
+.last_section{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.last_description{
+    padding-right: 100px;
+    width: 50vh;
+}
+
+.footer_logo_mobile{
+    display: none;
+}
+footer{
+    margin-top: 115px;
+    padding: 50px;
+}
+.footer_contents{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+.footer_contents a{
+    text-decoration: none;
+    text-decoration: none;
+    color: #70737C;
+    font-size: 14px;
+}
+.component{
+    display: flex;
+    gap: 32px;
+}
+.footer_icons{
+    display: flex;
+    justify-content: space-between;
 }
